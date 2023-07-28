@@ -4,9 +4,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Kumbh Sans', sans-serif;
-  background-image: linear-gradient(0deg, hsl(240, 73%, 65%) 0%, hsl(273, 75%, 66%) 100%);
+  background-image: linear-gradient(0deg, hsl(240, 73%, 65%) -10%, hsl(273, 75%, 66%) 77%);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  @media only screen and (min-width: 768px) {
+    background-image: linear-gradient(0deg, hsl(240, 73%, 65%) 0%, hsl(273, 75%, 66%) 100%);
+  }
 }
 
 main {
@@ -27,15 +30,40 @@ main {
     align-items: start;
     height: 100vh;
   }
+  @media only screen and (min-width: 800px) {
+    margin-top: 0;
+    align-items: center;
+    height: 100vh;
+  }
 }
 
 section {
   width: 87%;
+  @media only screen and (min-width: 800px) {
+    width: 90%;
+  }
+
+  @media only screen and (min-width: 900px) {
+    width: 60%;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    width: 60%;
+  }
+
+  @media only screen and (min-width: 2560px) {
+    width: 35%;
+  }
+
   .container-card {
     background-color: #FFFFFF;
     position: relative;
     border-radius: 20px;
     padding: 20px 20px 40px 20px;
+    @media only screen and (min-width: 800px) {
+      display: flex;
+      overflow-x: clip;
+    }
   }
   
   .illustration-section {
@@ -53,6 +81,10 @@ section {
       width: 73%;
       bottom: 0;
       left: 12%;
+    }
+
+    .card-desktop-illustration {
+      display: none;
     }
 
     @media screen and (min-width: 425px) {
@@ -97,6 +129,37 @@ section {
         left: 24%;
       }
     }
+    @media only screen and (min-width: 800px) {
+      .card-avatar, .card-avatar-pattern {
+        display: none;
+      }
+      .card-desktop-illustration {
+        display: block;
+      }
+      .card-desktop-pattern {
+        position: absolute;
+        height: 36em;
+        left: -255px;
+        top: -120px;
+      }
+      .card-desktop-avatar {
+        background-image: url(../images/illustration-woman-online-desktop.svg);
+        background-position: left;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 82%;
+        position: absolute;
+        top: 30px;
+        left: -69px;
+        bottom: 0;
+      }
+      .card-desktop-box {
+        position: absolute;
+        left: -93px;
+        top: 130px;
+      }
+    }
     
   }
   .faqs-section {
@@ -112,11 +175,17 @@ section {
       @media only screen and (min-width: 768px) {
         padding-top: 8em;
       }
+      @media only screen and (min-width: 800px) {
+        padding: 0 2em;
+      }
     h1 {
       color: hsl(238, 29%, 16%);
       text-align: center;
       font-size: 2em;
       line-height: 15px;
+      @media only screen and (min-width: 800px) {
+        text-align: start;
+      }
       
     }
     details {
@@ -156,6 +225,10 @@ section {
       height: 100%;
       border-bottom: 1px solid hsl(240, 5%, 91%);
       padding: 1em 0 0.6em 0;
+
+      @media only screen and (min-width: 800px) {
+        height: 17%;
+      }
 
       summary {
         font-weight: 700;
