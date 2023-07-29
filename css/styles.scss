@@ -44,11 +44,15 @@ section {
   }
 
   @media only screen and (min-width: 900px) {
+    width: 80%;
+  }
+
+  @media only screen and (min-width: 1000px) {
     width: 60%;
   }
 
   @media only screen and (min-width: 1440px) {
-    width: 60%;
+    width: 45%;
   }
 
   @media only screen and (min-width: 2560px) {
@@ -141,34 +145,34 @@ section {
         background-position: center left; 
         background-size: contain;
         background-repeat: no-repeat;
-        width: 400px;
+        width: 500px;
         position: absolute;
         top: 0;
-        left: -150px;
+        left: -195px;
         bottom: 0;
-        clip-path: inset(0 0 0 38%);
+        clip-path: inset(0 0 0 39%);
       }
       .card-desktop-avatar {
         background-image: url(../images/illustration-woman-online-desktop.svg);
         background-position: left;
         background-size: contain;
         background-repeat: no-repeat;
-        width: 300px;
+        width: 350px;
         position: absolute;
-        top: 30px;
-        left: -69px;
+        top: 0;
+        left: -53px;
         bottom: 0;
-        clip-path: inset(0 0 0 23%);
+        clip-path: inset(0 0 0 15%);
       }
       .card-desktop-box {
         background-image: url(../images/illustration-box-desktop.svg);
         background-position: left;
         background-size: contain;
         background-repeat: no-repeat;
-        width: 100px;
+        width: 150px;
         position: absolute;
-        left: -52px;
-        top: 103px;
+        left: -74px;
+        top: 75px;
         bottom: 0;
       }
     }
@@ -188,8 +192,19 @@ section {
         padding-top: 8em;
       }
       @media only screen and (min-width: 800px) {
-        padding: 2em;
+        padding: 3em 5em 3em 5em;
         height: 100%;
+      }
+      @media only screen and (min-width: 900px) {
+        padding: 3em 5em 3em 5em;
+      }
+    
+      @media only screen and (min-width: 1000px) {
+        padding: 3em 2em 3em 2em;
+      }
+    
+      @media only screen and (min-width: 1440px) {
+        padding: 3em 5em 3em 5em;
       }
     h1 {
       color: hsl(238, 29%, 16%);
@@ -216,6 +231,8 @@ section {
         cursor: pointer;
         list-style: none;
         font-size: 0.9em;
+        white-space: nowrap;
+        gap: 10px;
         &:hover {
           color: hsl(14, 88%, 65%);
         }
@@ -266,6 +283,7 @@ footer {
     text-align: center;
     a {
       color: #ffffff;
+      text-decoration: none;
       &:hover {
         color: hsl(14, 88%, 65%);
         cursor: pointer;
