@@ -38,7 +38,7 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 - [LESS](https://lesscss.org/) - For styles
 
 ### What I learned
-I learned how to implement details and summary elements, I used the <details> and <summary> elements to create an accordion-like behavior to show/hide the answer to each question. Also, I learned how to use position: absolute and clip-path to position and clip the illustration elements.
+I learned how to implement details and summary elements, I used these elements to create an accordion-like behavior to show/hide the answer to each question. Also, I learned how to use position: absolute and clip-path to position and clip the illustration elements.
  
  ```html
 <details>
